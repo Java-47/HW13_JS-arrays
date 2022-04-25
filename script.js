@@ -20,13 +20,13 @@ function reverseArray(arr) {
 }
 
 function search(item, arr) {
-    let index;
-    
+
     for(i in arr){
-        arr[i] === item ? index = i : -1;
+        if(arr[i] === item)
+        return i
     }
 
-    return index !== undefined ? index : -1 
+    return -1
 }
 
 function printArray(arr){
